@@ -3,740 +3,383 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MainPage</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
+    <title>Muhammad Syafa Baihaqi — Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Muhammad Syafa Baihaqi: truck and train photography, simulation game modding (ETS2 & Trainz), and IoT electronics."
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-      rel="stylesheet"
+    <meta name="author" content="Muhammad Syafa Baihaqi" />
+    <link rel="canonical" href="https://saiasyap.my.id/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Muhammad Syafa Baihaqi — Portfolio" />
+    <meta
+      property="og:description"
+      content="Portfolio of Muhammad Syafa Baihaqi: truck and train photography, simulation game modding (ETS2 & Trainz), and IoT electronics."
     />
+    <meta property="og:url" content="https://saiasyap.my.id/" />
+    <meta name="twitter:card" content="summary" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="fancybox.css" />
     <link rel="stylesheet" href="style.css" />
+    <script src="src/main.js" defer></script>
   </head>
+
   <body>
-    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Welcome >_< </a>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="navbar">
+      <nav class="navbar container" aria-label="Main navigation">
+        <a class="navbar-brand" href="#home">
+          <span class="brand-mark" aria-hidden="true">S</span>
+          <span class="brand-text">Syafa Baihaqi</span>
+        </a>
+
         <button
-          class="navbar-toggler"
+          class="nav-toggle"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
           aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          aria-controls="nav-menu"
+          aria-label="Open menu"
+        >
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
+          <span class="nav-toggle-bar" aria-hidden="true"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#education">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#project">Project</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#store">Store</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"/>
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
-      </div>
-    </nav>
 
-    <section id="home" class="d-flex align-items-center min-vh-100">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="display-2 fw-bold">
-              <span class="text-brand">Welcome To My Website</span>
-            </h1>
-            <h4 class="mb-3 mt-5">
-              Hello Everyone.<br />My Name Is Muhammad Syafa Baihaqi.<br />I am
-              a Junior Full-Stack Developer.
-            </h4>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a class="nav-link active" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About Me</a></li>
+          <li><a class="nav-link" href="#project">Project</a></li>
+          <li><a class="nav-link" href="#service">Service</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" id="home">
+        <div class="container hero-inner">
+          <p class="hero-kicker reveal">Welcome to my website</p>
+          <h1 class="hero-title reveal">
+            Muhammad Syafa<span class="text-brand"> Baihaqi</span>
+          </h1>
+          <p class="hero-lead reveal">
+            Hello everyone. I am Muhammad Syafa Baihaqi, a beginner interested
+            in truck and train photography, game modding, and IoT electronics.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="btn btn-primary" href="#project">View My Work</a>
+            <a class="btn btn-outline" href="#contact">Get in Touch</a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="web" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title text-center">
-              <h1>About Web</h1>
+      <!-- About me / skills -->
+      <section class="section" id="about">
+        <div class="container">
+          <header class="section-header reveal">
+            <h2>About Me</h2>
+            <p>These are the interests and skills I am learning as a beginner.</p>
+            <span class="line" aria-hidden="true"></span>
+          </header>
+
+          <div class="card-grid card-grid-3">
+            <article class="card reveal">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 17h4V5H2v12h3"></path><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5v8h1"></path><circle cx="7.5" cy="17.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg>
+              </div>
+              <h3>Truck Photography</h3>
               <p>
-                This website was started on <br />
-                April 9, 2022, <br />
-                and completed on <br />Coming Soon.
+                As a beginner truck spotter (truk mania), I enjoy photographing
+                trucks on the road, capturing each vehicle's angles, details,
+                and lighting.
               </p>
-              <div class="line"></div>
-            </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="16" rx="2"></rect><path d="M4 11h16"></path><path d="M12 3v8"></path><path d="m8 19-2 3"></path><path d="m18 22-2-3"></path><path d="M8 15h.01"></path><path d="M16 15h.01"></path></svg>
+              </div>
+              <h3>Railway Photography</h3>
+              <p>
+                As a beginner railfans, I like photographing trains, from
+                locomotives to stations, practicing timing and composition to
+                get the best shot.
+              </p>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="12" x2="10" y2="12"></line><line x1="8" y1="10" x2="8" y2="14"></line><line x1="15" y1="13" x2="15.01" y2="13"></line><line x1="18" y1="11" x2="18.01" y2="11"></line><rect x="2" y="6" width="20" height="12" rx="6"></rect></svg>
+              </div>
+              <h3>ETS2 Modding</h3>
+              <p>
+                As a beginner modder in Euro Truck Simulator 2, I create custom
+                models, skins, and small scripts to add new content to the game.
+              </p>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+              </div>
+              <h3>Trainz Modding</h3>
+              <p>
+                As a beginner modder in Trainz Simulator, I build models,
+                liveries, and custom scripts to extend the game's content.
+              </p>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"></circle><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"></path><circle cx="18" cy="5" r="3"></circle></svg>
+              </div>
+              <h3>Simulation Game Development</h3>
+              <p>
+                I am interested in simulation games, especially trucks and
+                trains, and want to learn how they are designed and built.
+              </p>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="9" y="9" width="6" height="6"></rect><path d="M9 1v3"></path><path d="M15 1v3"></path><path d="M9 20v3"></path><path d="M15 20v3"></path><path d="M20 9h3"></path><path d="M20 14h3"></path><path d="M1 9h3"></path><path d="M1 14h3"></path></svg>
+              </div>
+              <h3>IoT &amp; Electronics</h3>
+              <p>
+                As a beginner in IT, I am especially interested in electrical
+                work and IoT: wiring sensors and microcontrollers for small
+                monitoring projects.
+              </p>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <h3>Hardware &amp; Troubleshooting</h3>
+              <p>
+                As a beginner technician, I am learning to troubleshoot and
+                repair hardware and software, building a foundation I want to
+                grow with hands-on experience.
+              </p>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3>Web Development</h3>
+              <p>
+                I also have a small interest in web development and am slowly
+                learning HTML, CSS, and JavaScript.
+              </p>
+            </article>
           </div>
         </div>
+      </section>
 
-        <div class="row gy-5">
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-12">
-                <div class="edu p-5 pt-0">
-                  <h5>Visitor</h5>
-                  <small class="text-brand visitor">
-                    <img src="images/gif/0.gif (45×100).gif" />
-                    <strong class="viteks">
-                      The visitor counter program is being<br />developed and
-                      will be available soon.
-                    </strong>
-                  </small>
-                  <p class="mb-0">Thank you for visiting my website.</p>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="edu p-5 pt-0">
-                  <h5>Update</h5>
-                  <small class="text-brand"
-                    >•last updated on July 28, 2024</small
-                  >
-                  <p class="mb-0">
-                    This website will be updated when bugs are found or new
-                    features are added.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="edu p-5 pt-0 pb-0">
-                  <h5>Chagelog</h5>
-                  <small class="text-brand">
-                    v1.4 <br />
-                    •Added some minor updates <br />
-                    •Fixed bugs <br />
-                  </small>
-                  <p class="mb-0">
-                    Some changes will be displayed on this website.
-                  </p>
-                </div>
+      <!-- Projects -->
+      <section class="section section-soft" id="project">
+        <div class="container">
+          <header class="section-header reveal">
+            <h2>Project</h2>
+            <p>A featured project I have developed.</p>
+            <span class="line" aria-hidden="true"></span>
+          </header>
+
+          <article class="project-feature reveal">
+            <div class="project-feature-media">
+              <img
+                src="images/project/ilms.png"
+                alt="ILMS application icon"
+                width="512"
+                height="512"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="project-feature-body">
+              <p class="project-tag">Featured Project</p>
+              <h3>IoT Lab Management System (ILMS)</h3>
+              <p>
+                A web-based IoT laboratory management system covering component
+                inventory, a structured loan workflow, stock audit, ESP32
+                devices, and sensor monitoring. Built as a modular portfolio
+                case study for lab management.
+              </p>
+              <ul class="project-highlights">
+                <li>Authentication + RBAC (Admin / Dosen / Mahasiswa / User)</li>
+                <li>Loan workflow, stock history, and QR code inventory labels</li>
+                <li>Reports export to CSV, Excel, and multi-page PDF</li>
+                <li>ESP32 integration: registration, heartbeat, sensor readings</li>
+                <li>React PWA frontend with Express + Prisma backend, PostgreSQL</li>
+              </ul>
+              <div class="project-actions">
+                <a class="btn btn-primary" href="project-ilms.html">
+                  View Project Details
+                </a>
+                <a
+                  class="btn btn-outline"
+                  href="https://ilms.saiasyap.my.id"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Demo
+                </a>
               </div>
             </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="section section-warm" id="service">
+        <div class="container">
+          <header class="section-header reveal">
+            <h2>Service</h2>
+            <p>Modder services for the simulation games I focus on.</p>
+            <span class="line" aria-hidden="true"></span>
+          </header>
+
+          <div class="card-grid card-grid-2">
+            <article class="card reveal">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 17h4V5H2v12h3"></path><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5v8h1"></path><circle cx="7.5" cy="17.5" r="2.5"></circle><circle cx="17.5" cy="17.5" r="2.5"></circle></svg>
+              </div>
+              <h3>ETS2 Modding Service</h3>
+              <p>
+                Custom skins, models, and small scripts for Euro Truck
+                Simulator 2 — truck and trailer paintjobs built from your
+                references.
+              </p>
+              <div class="card-actions">
+                <a class="btn btn-primary btn-sm" href="service-ets2.html">
+                  View Details
+                </a>
+                <a
+                  class="btn btn-outline btn-sm"
+                  href="https://wa.me/6285642615523"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Order
+                </a>
+              </div>
+            </article>
+
+            <article class="card reveal">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="16" rx="2"></rect><path d="M4 11h16"></path><path d="M12 3v8"></path><path d="m8 19-2 3"></path><path d="m18 22-2-3"></path><path d="M8 15h.01"></path><path d="M16 15h.01"></path></svg>
+              </div>
+              <h3>Trainz Modding Service</h3>
+              <p>
+                Custom models, liveries, and scripts for Trainz Simulator —
+                locomotives and rolling stock made to your references.
+              </p>
+              <div class="card-actions">
+                <a class="btn btn-primary btn-sm" href="service-trainz.html">
+                  View Details
+                </a>
+                <a
+                  class="btn btn-outline btn-sm"
+                  href="https://wa.me/6285642615523"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Order
+                </a>
+              </div>
+            </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="about" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title text-center">
-              <h1>About Me</h1>
-              <p>These are the skills I have acquired as a beginner.</p>
-              <div class="line"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row gy-4 text-center">
-          <div class="col-lg-3 col-sm-6">
-            <div class="about py-5 px-4 border">
-              <div class="about-icon">
-                <i class="ri-code-box-fill"></i>
-              </div>
-              <h5 class="mt-4">Web Developer</h5>
-              <p>
-                As a beginner web developer, I am building my skills in HTML,
-                CSS, and JavaScript to create functional and visually appealing
-                websites. While I am still gaining experience, I am dedicated to
-                learning best practices in responsive design and web development
-                frameworks. My goal is to continuously improve my coding
-                abilities and stay updated with the latest web technologies. I
-                am eager to apply my growing knowledge to real-world projects
-                and develop a solid foundation in web development.
-              </p>
-              <a href="" class="about-link btn btn-sm btn-brand">
-                <span>Read More...</span>
-              </a>
-            </div>
-          </div>
+    </main>
 
-          <div class="col-lg-3 col-sm-6">
-            <div class="about py-5 px-4 border">
-              <div class="about-icon">
-                <i class="ri-edit-circle-fill"></i>
-              </div>
-              <h5 class="mt-4">Graphic Designer</h5>
-              <p>
-                As a beginner graphic designer, I am exploring the fundamentals
-                of visual design and typography. I am currently developing my
-                proficiency in Adobe Creative Suite, focusing on tools like
-                Photoshop and Illustrator. My approach is to understand the
-                principles of color theory, layout, and branding to create
-                impactful designs. I am passionate about enhancing my skills and
-                aspire to contribute creatively to projects while learning from
-                experienced designers.
-              </p>
-              <a href="" class="about-link btn btn-sm btn-brand">
-                <span>Read More...</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-sm-6">
-            <div class="about py-5 px-4 border">
-              <div class="about-icon">
-                <i class="ri-camera-fill"></i>
-              </div>
-              <h5 class="mt-4">Photographer</h5>
-              <p>
-                As a beginner photographer, I am learning the art of capturing
-                compelling images and understanding the technical aspects of
-                photography. I am familiarizing myself with the functions of
-                digital cameras and basic editing software to improve the
-                quality of my photos. My focus is on practicing composition,
-                lighting, and timing to develop my style and vision. I am
-                enthusiastic about expanding my knowledge and gaining practical
-                experience in various photography genres.
-              </p>
-              <a href="" class="about-link btn btn-sm btn-brand">
-                <span>Read More...</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-sm-6">
-            <div class="about py-5 px-4 border">
-              <div class="about-icon">
-                <i class="ri-tools-fill"></i>
-              </div>
-              <h5 class="mt-4">Technician</h5>
-              <p>
-                As a beginner technician, I am developing my skills in
-                troubleshooting and repairing electronic devices. I have a
-                foundational understanding of hardware and software systems,
-                which I am eager to expand through hands-on experience. My focus
-                is on learning efficient problem-solving techniques and
-                understanding the latest technology trends. I am committed to
-                continuous learning and growth in the field of technical support
-                and maintenance.
-              </p>
-              <a href="" class="about-link btn btn-sm btn-brand">
-                <span>Read More...</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="education" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title text-center">
-              <h1>Education & Experience</h1>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis,
-                ab.
-              </p>
-              <div class="line"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row gy-5">
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-12">
-                <div class="edu p-5 pt-0">
-                  <h5>MAN Kota Tegal</h5>
-                  <small class="text-brand">-</small>
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Vitae, itaque.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="edu p-5 pt-0">
-                  <h5>MTsN Kota Tegal</h5>
-                  <small class="text-brand">-</small>
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Vitae, itaque.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="edu p-5 pt-0 pb-0">
-                  <h5>SD Ihsaniyah 1 Pusaka</h5>
-                  <small class="text-brand">-</small>
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Vitae, itaque.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="row">
-              <div class="col-12">
-                <div class="edu p-5 pt-0">
-                  <h5>FREELANCER</h5>
-                  <small class="text-brand">2022-Now</small>
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Vitae, itaque.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="edu p-5 pt-0">
-                  <h5>Looking for Experience</h5>
-                  <small class="text-brand">Now-???</small>
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Vitae, itaque.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="edu p-5 pt-0 pb-0">
-                  <h5>Looking for Experience</h5>
-                  <small class="text-brand">Now-???</small>
-                  <p class="mb-0">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Vitae, itaque.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="project" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title text-center">
-              <h1>Project</h1>
-              <p>Here are some of the projects I have developed.</p>
-              <div class="line"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row gy-4 text-center">
-          <div class="col-lg-3 col-sm-6">
-            <div class="about py-5 px-4 border">
-              <div class="project-icon">
-                <img
-                  width="150px"
-                  height="150px"
-                  src="images/project/IPS5.JPG"
-                  alt=""
-                />
-              </div>
-              <h5 class="mt-4">Creating a Website for a Class</h5>
-              <p>
-                I am currently working on a project to create a website
-                specifically for a class. The site aims to provide an organized
-                platform for sharing course materials, assignments, and
-                important announcements. My focus is on designing an intuitive
-                user interface and ensuring the website is responsive across all
-                devices. This project is intended to enhance communication and
-                streamline access to educational resources for both students and
-                instructors.
-              </p>
-              <a href="" class="about-link btn btn-sm btn-brand">
-                <span>Open The Website</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-sm-6">
-            <div class="about py-5 px-4 border">
-              <div class="project-icon">
-                <img
-                  width="150px"
-                  height="150px"
-                  src="images/project/Rill.jpg"
-                  alt=""
-                />
-              </div>
-              <h5 class="mt-4">3D Modelling in Blender</h5>
-              <p>
-                I am currently working on a 3D modeling project in Blender,
-                where I am honing my skills as a beginner. This project involves
-                creating basic models and experimenting with various tools and
-                techniques to better understand the software. My focus is on
-                learning the fundamentals of 3D modeling, such as mesh
-                manipulation, texturing, and lighting. This experience is
-                helping me build a solid foundation in 3D design, and I am eager
-                to continue improving my abilities.
-              </p>
-              <a href="" class="about-link btn btn-sm btn-brand">
-                <span>View Snapshot</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-sm-6">
-            <div class="about py-5 px-4 border">
-              <div class="project-icon">
-                <img
-                  width="150px"
-                  height="150px"
-                  src="images/project/CB.jpg"
-                  alt=""
-                />
-              </div>
-              <h5 class="mt-4">Commander for a Minecraft Servers</h5>
-              <p>
-                I am currently involved in a project to enhance a Minecraft
-                server using command blocks. My responsibilities include
-                programming features such as an anti-cheat system, gacha
-                mechanics, an in-game shop, and land claim capabilities. This
-                project aims to create a more engaging and secure environment
-                for players, while also improving server functionality. My goal
-                is to help transform the server into a professional-grade
-                platform, offering a seamless and enjoyable experience for the
-                Minecraft community.
-              </p>
-              <a href="" class="about-link btn btn-sm btn-brand">
-                <span>Contact Me!</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-sm-6">
-            <div class="about py-5 px-4 border">
-              <div class="project-icon">
-                <img
-                  width="150px"
-                  height="150px"
-                  src="images/project/ADM.jpeg"
-                  alt=""
-                />
-              </div>
-              <h5 class="mt-4">Creating Add-ons for Minecraft</h5>
-              <p>
-                I am currently working on a project to create add-ons for
-                Minecraft, focusing on developing and programming new items.
-                This involves designing custom assets, such as textures and
-                models, and implementing them into the game using Minecraft's
-                add-on system. My aim is to enhance gameplay by introducing
-                unique items that offer new functionalities and experiences for
-                players. This project is helping me refine my skills in game
-                design and programming within the Minecraft ecosystem.
-              </p>
-              <a href="" class="about-link btn btn-sm btn-brand">
-                <span>Contact Me!</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="store" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title text-center">
-              <h1>Products & Services</h1>
-              <p>Here are some of the projects I have developed.</p>
-              <div class="line"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row gy-4 text-center">
-          <div class="col-lg-3 col-sm-6">
-            <div class="about py-5 px-4 border">
-              <div class="project-icon">
-                <img
-                  width="150px"
-                  height="150px"
-                  src="images/store/web.JPG"
-                  alt=""
-                />
-              </div>
-              <h5 class="mt-4">Website Development Services</h5>
-              <p>
-                Our Website Development Services provide custom design and
-                development for your business. We create responsive,
-                user-friendly websites that enhance your online presence and
-                meet your digital needs.
-              </p>
-              <a href="" class="about-link btn btn-sm btn-brand">
-                <span>View Store</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-sm-6">
-            <div class="about py-5 px-4 border">
-              <div class="project-icon">
-                <img
-                  width="150px"
-                  height="150px"
-                  src="images/store/web.JPG"
-                  alt=""
-                />
-              </div>
-              <h5 class="mt-4">3D Modeling Services</h5>
-              <p>
-                Our 3D Modeling Services offer custom 3D models tailored to your
-                specifications. We create high-quality, detailed models for
-                various applications, ensuring precision and creativity in every
-                project.
-              </p>
-              <a href="" class="about-link btn btn-sm btn-brand">
-                <span>View Store</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-sm-6">
-            <div class="about py-5 px-4 border">
-              <div class="project-icon">
-                <img
-                  width="150px"
-                  height="150px"
-                  src="images/store/web.JPG"
-                  alt=""
-                />
-              </div>
-              <h5 class="mt-4">Minecraft Server Programming Services</h5>
-              <p>
-                Our Minecraft Server Programming Services provide custom server
-                solutions tailored to enhance your gameplay experience. We
-                specialize in developing plugins, mods, and server
-                configurations to meet your unique needs and ensure optimal
-                performance.
-              </p>
-              <a href="" class="about-link btn btn-sm btn-brand">
-                <span>View Store</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-sm-6">
-            <div class="about py-5 px-4 border">
-              <div class="project-icon">
-                <img
-                  width="150px"
-                  height="150px"
-                  src="images/store/web.JPG"
-                  alt=""
-                />
-              </div>
-              <h5 class="mt-4">Other Services</h5>
-              <p></p>
-              <li class="">
-                <a class="" href="#">Hosting & Domain</a>
-              </li>
-              <li class="">
-                <a class="" href="#">Digital Art</a>
-              </li>
-              <li class="">
-                <a class="" href="#">Sell Pc Games</a>
-              </li>
-              <li class="">
-                <a class="" href="#">Cyber Crime</a>
-              </li>
-
-              <a href="" class="about-link btn btn-sm btn-brand">
-                <span>View Store</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section-padding last">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="section-title text-center">
-              <h1>Contact</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit Ad,
-                veritatis.
-              </p>
-              <div class="line"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <form
-              action="submit-form.php"
-              method="POST"
-              class="row g-3 roboto-regular"
-            >
-              <div class="form-group col-md-4">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Nama"
-                  name="nama"
-                />
-              </div>
-              <div class="form-group col-md-4">
-                <input
-                  type="number"
-                  class="form-control"
-                  placeholder="No.HP"
-                  name="no_hp"
-                />
-              </div>
-              <div class="form-group col-md-4">
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Email"
-                  name="email"
-                />
-              </div>
-              <div class="form-group col-md-12">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Subject"
-                  name="subject"
-                />
-              </div>
-              <div class="form-group col-md-12">
-                <textarea
-                  class="form-control"
-                  placeholder="Kirim Pesan Anda"
-                  rows="5"
-                  name="pesan"
-                ></textarea>
-              </div>
-              <div class="form-group text-center col-md-12">
-                <button class="btn-brand" type="submit">Send</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="site-footer">
-      <div class="footer-container">
-        <div class="footer-section">
-          <h3>About Me</h3>
+    <footer class="site-footer" id="contact">
+      <div class="container footer-container">
+        <div class="footer-section footer-about">
+          <a class="footer-brand" href="#home">
+            <span class="brand-mark" aria-hidden="true">S</span>
+            <span>SaiaSyap</span>
+          </a>
           <p>
-            As a beginner web developer, I am learning HTML, CSS, and
-            JavaScript, focusing on responsive design and modern frameworks, and
-            eager to apply my skills to real-world projects.
+            A beginner interested in truck and train photography, game modding
+            (ETS2 &amp; Trainz), and IoT electronics.
           </p>
         </div>
+
         <div class="footer-section">
           <h3>Navigation</h3>
-          <ul>
+          <ul class="footer-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#service">Service</a></li>
           </ul>
         </div>
+
         <div class="footer-section">
-          <h3>Follow Me</h3>
-          <ul>
+          <h3>Contact</h3>
+          <ul class="contact-list">
+            <li>
+              <a
+                href="https://wa.me/6285642615523"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"></path></svg>
+                WhatsApp
+              </a>
+            </li>
             <li>
               <a
                 href="https://www.instagram.com/saia.syap?igsh=N2NxZ2JjZTM2OHli"
-                >Instagram</a
+                target="_blank"
+                rel="noopener noreferrer"
               >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                Instagram
+              </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/syafa.ez.18?mibextid=ZbWKwL"
-                >Facebook</a
+              <a
+                href="https://www.facebook.com/syafa.ez.18?mibextid=ZbWKwL"
+                target="_blank"
+                rel="noopener noreferrer"
               >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                Facebook
+              </a>
             </li>
             <li>
-              <a href="https://www.tiktok.com/@saiasyap?_t=8oQKshiKMUh&_r=1"
-                >TikTok</a
+              <a
+                href="https://www.tiktok.com/@saiasyap?_t=8oQKshiKMUh&_r=1"
+                target="_blank"
+                rel="noopener noreferrer"
               >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+                TikTok
+              </a>
             </li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 SYS•CORP. All rights reserved.</p>
+        <p>&copy; <span id="year">2026</span> SaiaSyap. All rights reserved.</p>
       </div>
     </footer>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="fancybox.umd.js"></script>
-    <script scr="main.js"></script>
-    <script>
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-
-          var nama = document.forms["contactForm"]["nama"].value;
-          var email = document.forms["contactForm"]["email"].value;
-
-          if (nama == "" || email == "") {
-            alert("Nama dan email harus diisi.");
-            return false;
-          }
-
-          var xhr = new XMLHttpRequest();
-          xhr.open("POST", "submit-form.php", true);
-          xhr.setRequestHeader(
-            "Content-Type",
-            "application/x-www-form-urlencoded"
-          );
-
-          xhr.onreadystatechange = function () {
-            if (xhr.readyState == 4 && xhr.status == 200) {
-              alert(xhr.responseText);
-            }
-          };
-
-          var data = new FormData(document.getElementById("contactForm"));
-          xhr.send(new URLSearchParams(data).toString());
-        });
-    </script>
+    <button class="back-to-top" type="button" aria-label="Back to top" hidden>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+    </button>
   </body>
 </html>
