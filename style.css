@@ -945,6 +945,7 @@ img {
     flex-direction: row;
     align-items: center;
     gap: var(--sp-1);
+    margin-left: auto;
     padding: 0;
     background: none;
     border: none;
@@ -998,4 +999,141 @@ img {
     opacity: 1;
     transform: none;
   }
+}
+
+/* =========================================================
+   Theme toggle
+   ========================================================= */
+:root {
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+.nav-actions {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.theme-toggle {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  color: var(--heading);
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  border-color: var(--brand);
+  color: var(--brand-dark);
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+.theme-toggle .icon-sun {
+  display: none;
+}
+
+.theme-toggle .icon-moon {
+  display: block;
+}
+
+[data-theme="dark"] .theme-toggle .icon-sun {
+  display: block;
+}
+
+[data-theme="dark"] .theme-toggle .icon-moon {
+  display: none;
+}
+
+/* =========================================================
+   Dark theme
+   Keep the brand orange -- override surfaces only.
+   ========================================================= */
+[data-theme="dark"] {
+  --dark: #0f1020;
+  --heading: #eef0f8;
+  --body: #b8bac8;
+  --muted: #8a8ca0;
+  --bg: #141528;
+  --bg-alt: #1a1c31;
+  --border: #2b2e45;
+  --footer-bg: #0b0c18;
+  --footer-text: #a5a7b8;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+[data-theme="dark"] .site-header {
+  background-color: rgba(20, 21, 40, 0.92);
+}
+
+[data-theme="dark"] .nav-menu {
+  background-color: var(--bg);
+}
+
+[data-theme="dark"] .hero {
+  background:
+    radial-gradient(
+      60rem 30rem at 110% -10%,
+      rgba(var(--brand-rgb), 0.14),
+      transparent 60%
+    ),
+    radial-gradient(
+      45rem 25rem at -10% 110%,
+      rgba(var(--brand-rgb), 0.1),
+      transparent 60%
+    ),
+    var(--bg);
+}
+
+[data-theme="dark"] .page-hero {
+  background:
+    radial-gradient(
+      60rem 30rem at 110% -10%,
+      rgba(var(--brand-rgb), 0.14),
+      transparent 60%
+    ),
+    var(--bg);
+}
+
+[data-theme="dark"] .section-warm {
+  background-color: #211b12;
+}
+
+[data-theme="dark"] .card,
+[data-theme="dark"] .project-feature,
+[data-theme="dark"] .process-list li,
+[data-theme="dark"] .link-list li {
+  background-color: var(--bg-alt);
+}
+
+[data-theme="dark"] .spec-table {
+  background-color: var(--bg-alt);
+}
+
+[data-theme="dark"] .spec-table thead th {
+  background-color: var(--dark);
+  border-bottom-color: var(--border);
+}
+
+[data-theme="dark"] .arch {
+  background-color: var(--dark);
+  border: 1px solid var(--border);
+}
+
+[data-theme="dark"] .skip-link {
+  background-color: var(--dark);
 }

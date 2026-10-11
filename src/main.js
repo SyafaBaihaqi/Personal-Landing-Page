@@ -5,8 +5,33 @@
   var navToggle = document.querySelector(".nav-toggle");
   var navMenu = document.getElementById("nav-menu");
   var navLinks = document.querySelectorAll(".nav-link");
+  var themeToggle = document.querySelector(".theme-toggle");
   var backToTop = document.querySelector(".back-to-top");
   var yearEl = document.getElementById("year");
+
+  /* ---------- Theme toggle ---------- */
+  function setThemeIcon() {
+    if (!themeToggle) return;
+    var dark = document.documentElement.getAttribute("data-theme") === "dark";
+    themeToggle.setAttribute(
+      "aria-label",
+      dark ? "Switch to light theme" : "Switch to dark theme"
+    );
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener("click", function () {
+      var root = document.documentElement;
+      var next =
+        root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try {
+        localStorage.setItem("theme", next);
+      } catch (e) {}
+      setThemeIcon();
+    });
+  }
+  setThemeIcon();
 
   /* ---------- Header shadow on scroll ---------- */
   function updateHeader() {

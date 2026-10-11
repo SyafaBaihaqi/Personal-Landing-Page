@@ -46,6 +46,7 @@ No CSS/JS frameworks or libraries.
 ## Features
 
 - Fixed navbar with hamburger menu on mobile
+- Light/dark theme toggle (persisted in localStorage, respects `prefers-color-scheme`)
 - Smooth scrolling with scroll-spy active states
 - Distinct background treatment per section
 - Scroll reveal animations (respects `prefers-reduced-motion`)
