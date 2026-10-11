@@ -24,6 +24,7 @@ Opening `index.html` directly in a browser also works — all paths are relative
 .
 ├── index.html            # landing page
 ├── project-ilms.html     # ILMS project detail page
+├── project-iot.html      # Electronics & IoT projects detail page
 ├── service-ets2.html     # ETS2 modding service detail page
 ├── service-trainz.html   # Trainz modding service detail page
 ├── style.css             # design system, layout, responsive rules
@@ -49,7 +50,7 @@ No CSS/JS frameworks or libraries.
 - Distinct background treatment per section
 - Scroll reveal animations (respects `prefers-reduced-motion`)
 - Back-to-top button
-- Featured project (ILMS) with a dedicated detail page
+- Project section with a featured ILMS project and an Electronics & IoT projects card linking to project.saiasyap.my.id
 - Service section (ETS2 & Trainz modding) with a detail page per service
 - Footer with contact links (WhatsApp, Instagram, Facebook, TikTok)
 
